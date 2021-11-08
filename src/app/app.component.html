@@ -1,15 +1,63 @@
-<div style="text-align: center">
-  <h1>
-    {{ title }}
-  </h1>
-  <!-- <button (click)="getRecipies()">Fetch Data</button> -->
-</div>
-
-<div class="menus" *ngFor="let item of menus.data" style="text-align: center">
-  <a target="_blank" [href]="item.thumbnail_url">
-    <img [src]="item.thumbnail_url" width="300" height="200" />
-  </a>
-  <div class="menu-name">{{ item.name }}</div>
+<div class="container-fluid" id="header">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#" target="_self">
+            <div id="brand-name"><strong>EatBite</strong></div>
+        </a>
+        <!-- Collapse -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Left -->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" target="_self">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about" target="_self">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="restaurant.html" target="_self">New Restaurants</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="" target="_self">City</a>
+                    <ul>
+                        <li><a href="#">Nairobi</a></li>
+                        <li><a href="">Naivasha</a></li>
+                        <li><a href="#">Nakuru</a></li>
+                        <li><a href="#">Nanyuki</a></li>
+                        <li><a href="">Mombasa</a></li>
+                        <li><a href="">Diani</a></li>
+                        <li><a href="">Watamu</a></li>
+                        <li><a href="">Lamu</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="" target="_self">Search by cuisine</a>
+                    <ul>
+                        <li><a href="">Burgers</a></li>
+                        <li><a href="#">African</a></li>
+                        <li><a href="">Chinese</a></li>
+                        <li><a href="">Italian</a></li>
+                        <li><a href="">Mexican</a></li>
+                        <li><a href="">Seafood</a></li>
+                        <li><a href="#">Spanish</a></li>
+                        <li><a href="#">Vegeterian</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="listing" target="_self">Restaurant Listing</a>
+                </li>
+            </ul>
+            <div class="searchbar">
+                <input type="text" placeholder="Search..">
+              </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
 </div>
 
 <router-outlet></router-outlet>
