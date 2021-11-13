@@ -6,7 +6,6 @@ body{
     background-color: white;
     border: 2px white;
     position:relative;
-
 }
 .navbar{
     margin:0;
@@ -26,6 +25,7 @@ body{
   .nav-link {
     color:black !important;
     font-weight:bold;
+    z-index: 99999;
     }
     .navbar input[type="text"] {
         padding: 6px;
@@ -37,6 +37,7 @@ body{
       .navbar {
         padding: 10px;
         box-shadow: 0px 2px 10px;
+        z-index: 99999;
       }
       .navbar ul {
         text-align: center;
@@ -51,9 +52,13 @@ body{
         text-decoration: none;
         font-weight: bold;
         padding: 15px;
+        z-index: 99999;
+
       }
       .navbar ul li ul {
         display: none;
+        z-index: 99999;
+
       }
       .navbar ul li:hover ul {
         display: block;
@@ -62,16 +67,21 @@ body{
         background: white;
         padding: 10px;
         border: 1px solid black;
+        z-index: 99999;
       }
       .navbar ul li:hover ul li {
         display: block;
+        z-index: 99999;
       }
       .navbar ul li:hover ul li a {
         color: black;
+        z-index: 99999;
       }
 
       .searchbar {
         width: 15%;
+        color:black;
+        font-weight:bold;
       }
       
       .features{

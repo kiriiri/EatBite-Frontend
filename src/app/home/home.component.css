@@ -64,3 +64,14 @@ div.menus {
   .features{
     font-weight:bold;
   }
+  #wrapper {
+    margin-top: 25px;
+    margin-left: 170px;
+    margin-right:100px;
+    margin-bottom:25px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    grid-auto-rows: minmax(100px, auto);
+    float:left;
+}

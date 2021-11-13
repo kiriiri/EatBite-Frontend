@@ -10,6 +10,7 @@ import { ListingComponent } from './listing/listing.component';
 import { HomeComponent } from './home/home.component';
 import { CityComponent } from './city/city.component';
 import { CuisineComponent } from './cuisine/cuisine.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CuisineComponent } from './cuisine/cuisine.component';
     ListingComponent,
     HomeComponent,
     CityComponent,
-    CuisineComponent
+    CuisineComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
