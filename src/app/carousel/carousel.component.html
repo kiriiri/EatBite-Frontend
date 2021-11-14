@@ -5,7 +5,7 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item" *ngFor="let item of items;let index = index;let isFirst = first" [ngClass]="{active:isFirst}">
-        <img [src]="item.thumbnail_url" class="d-block w-100" [alt]="item.name" height="350">
+        <img [src]="item.thumbnail_url" class="d-block w-100" [alt]="item.name">
         <div class="carousel-caption d-none d-md-block">
           <p [textContent]="item.name"></p>
         </div>
