@@ -9,6 +9,7 @@ import { HttpClient } from "@angular/common/http";
 export class AppComponent implements OnInit {
 
   cities:any = []
+  cuisines:any =[]
 
   constructor(private http: HttpClient) {
    
@@ -22,8 +23,17 @@ export class AppComponent implements OnInit {
     })
   }
 
+  getCuisines(){
+    const url ='http://localhost:3000/api/restaurant/getCuisines'
+    this.http.get(url).subscribe((res)=>{
+      this.cuisines = res
+      console.log(this.cuisines)
+    })
+  }
+
   ngOnInit(): void {
     this.getCities();
+    this.getCuisines();
   }
 
   

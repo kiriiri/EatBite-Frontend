@@ -1,1 +1,8 @@
-<p>city works!</p>
+<div class="container-fluid" id="wrapper">
+    <div style="text-align: center" *ngFor="let restaurant of cityMenus.data">
+            <a target="_blank" [href]="restaurant.restaurants_model.thumbnail_url">
+                <img [src]="restaurant.restaurants_model.thumbnail_url" width="250" height="200" />
+            </a>
+            <p class="menu-name"> {{ restaurant.restaurants_model.name }}</p>
+    </div>
+</div>
