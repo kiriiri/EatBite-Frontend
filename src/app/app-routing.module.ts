@@ -7,15 +7,17 @@ import { CustomerComponent } from './customer/customer.component';
 import { AdminComponent } from './admin/admin.component';
 import { CityComponent } from './city/city.component';
 import { CuisineComponent } from './cuisine/cuisine.component';
+import { MenusComponent } from './menus/menus.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'listing', component: ListingComponent },
   { path: 'city/:id', component: CityComponent },
-  { path: 'cuisine', component: CuisineComponent },
+  { path: 'cuisine/:id', component: CuisineComponent },
   {path:'customer', component: CustomerComponent},
-  {path:'admin', component: AdminComponent}
+  {path:'admin', component: AdminComponent},
+  {path: 'city/:cityId/menus/:id', component: MenusComponent}
 ];
 
 @NgModule({

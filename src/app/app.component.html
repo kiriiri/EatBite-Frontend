@@ -35,7 +35,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="" target="_self">Search by cuisine</a>
                     <ul>
-                        <li *ngFor="let item of cuisines.data" ><a href="cuisine">{{ item.name }}</a></li>
+                        <li *ngFor="let item of cuisines.data"><a [routerLink]="['cuisine/' + item.id]">{{ item.name }}</a></li>
                         <!--<li><a href="#">African</a></li>
                         <li><a href="">Chinese</a></li>
                         <li><a href="">Italian</a></li>

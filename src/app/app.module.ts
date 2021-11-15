@@ -13,6 +13,7 @@ import { CuisineComponent } from './cuisine/cuisine.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { CustomerComponent } from './customer/customer.component';
 import { AdminComponent } from './admin/admin.component';
+import { MenusComponent } from './menus/menus.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { AdminComponent } from './admin/admin.component';
     CuisineComponent,
     CarouselComponent,
     CustomerComponent,
-    AdminComponent
+    AdminComponent,
+    MenusComponent
   ],
   imports: [
     BrowserModule,
