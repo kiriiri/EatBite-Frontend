@@ -1,6 +1,6 @@
 <div class="container-fluid" id="wrapper">
     <div style="text-align: center" *ngFor="let cuisine of cuisines.data">
-            <a target="_blank" [href]="cuisine.restaurants_model.thumbnail_url">
+            <a target="_blank" [href]="cuisine.restaurants_model.restaurants_menu_map_model ? cuisine.restaurants_model.restaurants_menu_map_model.menu_link : '' ">
                 <img [src]="cuisine.restaurants_model.thumbnail_url" width="250" height="200" />
             </a>
             <p class="menu-name"> {{ cuisine.restaurants_model.name }}</p>

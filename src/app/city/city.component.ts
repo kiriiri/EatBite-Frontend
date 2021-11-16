@@ -17,7 +17,7 @@ export class CityComponent implements OnInit {
   getRecipies(cityId: Number){
     console.log(cityId)
 
-    const url ='http://localhost:3000/api/restaurant/getMenus/'+cityId
+    const url ='http://localhost:3000/api/restaurant/getCityRestaurants/'+cityId
     this.http.get(url).subscribe((res)=>{
       this.cityMenus = res
       console.log(this.cityMenus)

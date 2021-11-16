@@ -7,9 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminComponent implements OnInit {
 
-  email!: string;
-  password!: string;
-
   constructor() { }
 
   ngOnInit(): void {

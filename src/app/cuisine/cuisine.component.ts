@@ -17,7 +17,7 @@ export class CuisineComponent implements OnInit {
   getRecipies(cuisineId: Number){
     console.log(cuisineId)
 
-    const url ='http://localhost:3000/api/restaurant/getRestaurants/'+cuisineId
+    const url ='http://localhost:3000/api/restaurant/getCuisines/'+cuisineId
     this.http.get(url).subscribe((res)=>{
       this.cuisines = res
       console.log(this.cuisines)

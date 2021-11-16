@@ -1,8 +1,17 @@
 <div class="container-fluid" id="wrapper">
     <div style="text-align: center" *ngFor="let restaurant of cityMenus.data">
-        <a [routerLink]="['menus/' + restaurant.restaurants_model.id]">
+        <a  [href]="restaurant.menu_link ? restaurant.menu_link : '' " target="_new">
             <img [src]="restaurant.restaurants_model.thumbnail_url" width="250" height="200" />
         </a>
         <p class="menu-name"> {{ restaurant.restaurants_model.name }}</p>
+        <p class="menu-name"> Open</p> 
+        <p class="menu-name"> {{ restaurant.restaurants_model.open_hrs }}</p>
+        <p class="menu-name"> Open</p> 
+        <p class="menu-name"> {{ restaurant.restaurants_model.close_hrs }}</p>
+        <br/>
+        <p class="menu-name"> {{ restaurant.restaurants_model.mobile_no }}</p>
+        <p class="menu-name"> {{ restaurant.restaurants_model.email }}</p>
+        <p class="menu-name"> {{ restaurant.restaurants_model.address }}</p>
+
     </div>
 </div>

@@ -36,7 +36,7 @@ export class HomeComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   getRecipies(){
-    const url ='http://localhost:3000/api/restaurant/getMenus'
+    const url ='http://localhost:3000/api/restaurant/getPopulorMenus'
     this.http.get(url).subscribe((res)=>{
       this.items = res
       console.log(this.menus)
@@ -44,7 +44,7 @@ export class HomeComponent implements OnInit {
   }
 
   getPopularRecipies(){
-    const url ='http://localhost:3000/api/restaurant/getPopularMenus'
+    const url ='http://localhost:3000/api/restaurant/getPopularCuisines'
     this.http.get(url).subscribe((res)=>{
       this.popularMenus = res
       console.log(this.popularMenus)
