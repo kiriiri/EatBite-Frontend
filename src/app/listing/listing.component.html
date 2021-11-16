@@ -8,30 +8,30 @@
                     <div class="row container">
                         <div class="col-md-2"></div>
                         <div class="col-md-8 container">
-                            <form action="http://localhost/connection/connect.php" method="post">
+                            <form  [formGroup]="listForm" (ngSubmit)="onSubmit()">
                                 <div class="form-group">
                                     <label for="firstName">First Name</label>
-                                    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="alphabetical letters only" pattern="[a-zA-Z ]+" required>
+                                    <input type="text" class="form-control" formControlName="first_name" id="firstName" name="firstName" placeholder="alphabetical letters only" pattern="[a-zA-Z ]+" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="lastName">Last Name</label>
-                                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="alphabetical letters only" pattern="[a-zA-Z ]+" required>
+                                    <input type="text" class="form-control" formControlName="last_name" id="lastName" name="lastName" placeholder="alphabetical letters only" pattern="[a-zA-Z ]+" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="restaurantName">What is your restaurant Name?</label>
-                                    <input type="text" class="form-control" id="restaurantName" name="restaurantName" required>
+                                    <input type="text" class="form-control"formControlName="restaurant_name"  id="restaurantName" name="restaurantName" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="email">Email address</label>
-                                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="abcd@efgh" required>
+                                    <input type="email" class="form-control" formControlName="email" id="email" name="email" aria-describedby="emailHelp" placeholder="abcd@efgh" required>
                                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                                 </div>
                                 <div class="form-group">
                                     <label for="phoneNumber">Phone Number</label>
-                                    <input type="number" class="form-control" id="phoneNumber" name="phoneNumber" required>
+                                    <input type="number" class="form-control" formControlName="mobile_no" id="phoneNumber" name="phoneNumber" required>
                                 </div>
                                 <div id="error"></div><br>
-                                <button type="submit" class="btn btn-outline-default" id="listMe">List me!</button>
+                                <button type="submit" class="btn  btn-primary btn-outline-default" id="listMe">List me!</button>
                             </form>
                         </div>
                         <div class="col-md-2"></div>

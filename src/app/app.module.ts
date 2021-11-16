@@ -12,8 +12,8 @@ import { CityComponent } from './city/city.component';
 import { CuisineComponent } from './cuisine/cuisine.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { CustomerComponent } from './customer/customer.component';
-import { AdminComponent } from './admin/admin.component';
 import { MenusComponent } from './menus/menus.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,6 @@ import { MenusComponent } from './menus/menus.component';
     CuisineComponent,
     CarouselComponent,
     CustomerComponent,
-    AdminComponent,
     MenusComponent
   ],
   imports: [
@@ -33,6 +32,7 @@ import { MenusComponent } from './menus/menus.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

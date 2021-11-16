@@ -4,7 +4,6 @@ import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { ListingComponent } from './listing/listing.component';
 import { CustomerComponent } from './customer/customer.component';
-import { AdminComponent } from './admin/admin.component';
 import { CityComponent } from './city/city.component';
 import { CuisineComponent } from './cuisine/cuisine.component';
 import { MenusComponent } from './menus/menus.component';
@@ -16,7 +15,6 @@ const routes: Routes = [
   { path: 'city/:id', component: CityComponent },
   { path: 'cuisine/:id', component: CuisineComponent },
   {path:'customer', component: CustomerComponent},
-  {path:'admin', component: AdminComponent},
   {path: 'city/:cityId/menus/:id', component: MenusComponent}
 ];
 
