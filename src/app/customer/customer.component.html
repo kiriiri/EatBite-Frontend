@@ -8,34 +8,34 @@
                     <div class="row container">
                         <div class="col-md-2"></div>
                         <div class="col-md-8 container">
-                            <form action="http://localhost/connection/connect.php" method="post">
+                            <form [formGroup]="customerForm" (ngSubmit)="onSubmit()">
                                 <div class="form-group">
                                     <label for="firstName">First Name</label>
-                                    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="alphabetical letters only" pattern="[a-zA-Z ]+" required>
+                                    <input type="text" formControlName="first_name" class="form-control" id="firstName" name="firstName" placeholder="alphabetical letters only" pattern="[a-zA-Z ]+" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="lastName">Last Name</label>
-                                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="alphabetical letters only" pattern="[a-zA-Z ]+" required>
+                                    <input type="text" formControlName="last_name" class="form-control" id="lastName" name="lastName" placeholder="alphabetical letters only" pattern="[a-zA-Z ]+" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="idNumber">ID Number</label>
-                                    <input type="number" class="form-control" id="idNumber" name="idNumber" required>
+                                    <input type="number" formControlName="id_number" class="form-control" id="idNumber" name="idNumber" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="dob">Date of Birth</label>
-                                    <input type="date" class="form-control" id="dob" name="dob" required>
+                                    <input type="date" formControlName="dob" class="form-control" id="dob" name="dob" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="gender">Gender</label>
-                                    <input type="text" class="form-control" id="gender" name="gender" required>
+                                    <input type="text" formControlName="gender" class="form-control" id="gender" name="gender" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="country">Country</label>
-                                    <input type="text" class="form-control" id="country" name="country" required>
+                                    <input type="text" formControlName="country" class="form-control" id="country" name="country" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="phoneNumber">Phone Number</label>
-                                    <input type="number" class="form-control" id="phoneNumber" name="phoneNumber" required>
+                                    <input type="number" formControlName="phone_number" class="form-control" id="phoneNumber" name="phoneNumber" required>
                                 </div>
                                 <div id="error"></div><br>
                                 <button type="submit" class="btn btn-outline-default" id="listMe">Sign Me!</button>
